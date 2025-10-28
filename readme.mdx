@@ -1,59 +1,81 @@
-# Homebrew Hackers Club — College Template
+# Elloe AI College
 
-This repository is a minimal starter for creating a College on the Homebrew Hackers Club platform. Add courses and guides using MDX files, commit your changes, and your college updates on the platform once your repo is connected.
+Welcome to **Elloe AI College**—your learning hub for AI safety, compliance, and best practices. This repository contains educational content for building safe, explainable, and regulation-ready AI systems.
 
-## What’s inside
+## About Elloe
 
-- `home.mdx`: Your college landing page.
-- `courses/`: Each folder is a course; files inside are chapters.
-- `guides/`: Standalone guides.
-- `assets/`: Images and other static assets.
+[Elloe](https://www.elloe.ai) is the immune system for AI safety & compliance. We prevent hallucinations, bias, and compliance risks in LLMs and GenAI—powered by explainability, live audits, and global standards.
 
-Example structure:
+Our platform provides:
+- **AI Safety**: Prevent hallucinations and bias in LLM outputs
+- **Compliance**: EU AI Act, HIPAA, GDPR, and global framework support
+- **Explainability**: Real-time forensics and auditability
+- **Guardrails**: Production-ready safety controls
+
+## What's Inside
+
+This college template uses MDX files organized into:
+
+- `home.mdx`: College landing page and overview
+- `courses/`: Each folder is a course; files inside are chapters
+- `guides/`: Standalone educational guides
+- `assets/`: Images and other static assets
+
+### Current Structure
 
 ```
-assets/
-  hackerlight.webp
-courses/
-  example-course/
-    index.mdx        // course overview page
-    chapter-1.mdx    // a chapter
-    whatever.mdx     // another chapter
-guides/
-  example.mdx        // a standalone guide
-home.mdx             // college homepage
+elloe-ai-college/
+├── assets/
+│   ├── example-banner.png
+│   └── hackerlight.webp
+├── courses/
+│   ├── example-course/
+│   │   ├── index.mdx
+│   │   ├── 1-chapter.mdx
+│   │   └── 2-chapter.mdx
+│   └── example-course-with-modules/
+│       ├── 1-module/
+│       ├── 2-module/
+│       └── 3-chapter-final.mdx
+├── guides/
+│   ├── ai-hallucinations.mdx
+│   └── example.mdx
+├── home.mdx
+└── readme.mdx
 ```
 
-## MDX + frontmatter
+## MDX + Frontmatter
 
-Content files are MDX with YAML frontmatter for metadata:
+Content files use MDX format with YAML frontmatter for metadata:
 
 ```mdx
 ---
-title: Example Title
-description: Short summary shown in listings
+title: What is hallucination in LLMs and how to prevent them?
+description: Understanding AI hallucinations and strategies to prevent them
 tags:
-  - tag-one
-  - tag-two
+  - ai
+  - hallucinations
+  - llm
+  - safety
 ---
 
 # Heading
 
-Write in MDX. You can embed code blocks, images, and components.
+Write your content in MDX. You can embed code blocks, images, and custom components.
 ```
 
-## Create a course
+## Create a Course
 
-1. Create a folder in `courses/` using your course slug, e.g. `courses/web-apis/`.
-2. Add `index.mdx` with the course overview (include `title`, `description`, and optional `tags`).
-3. Add chapter files like `chapter-1.mdx`, `chapter-2.mdx`, etc. Use clear filenames; they’ll map to chapter slugs on the platform.
+1. Create a folder in `courses/` using your course slug, e.g. `courses/ai-guardrails/`
+2. Add `index.mdx` with the course overview (include `title`, `description`, and optional `tags`)
+3. Add chapter files like `1-chapter.mdx`, `2-chapter.mdx`, etc.
 
-## Create a guide
+## Create a Guide
 
-1. Add a new `.mdx` file in `guides/`, e.g. `guides/getting-started.mdx`.
-2. Include frontmatter (`title`, `description`, optional `tags`) and your content.
+1. Add a new `.mdx` file in `guides/`, e.g. `guides/rag-implementation.mdx`
+2. Include frontmatter (`title`, `description`, optional `tags`) and your content
 
-## Use assets
+## Use Assets
 
 Place images in `assets/` and reference them with relative paths:
 
@@ -61,10 +83,25 @@ Place images in `assets/` and reference them with relative paths:
 ![alt text](../assets/hackerlight.webp)
 ```
 
-## Update the college homepage
+## Contributing
 
-Edit `home.mdx` to customize your college’s landing page.
+This college focuses on AI safety, compliance, and best practices. When contributing:
 
-## Publish changes
+- Maintain focus on practical, actionable content
+- Include code examples and real-world scenarios
+- Ensure accuracy and cite sources when needed
+- Follow the existing MDX format and structure
 
-Commit and push. Once your repository is connected to Homebrew Hackers Club, new commits will update your college automatically.
+## Resources
+
+- [Elloe Platform](https://www.elloe.ai)
+- [Book a Demo](https://www.elloe.ai)
+- [Try AI Guardrails for Free](https://www.elloe.ai)
+
+## License
+
+See [LICENSE](./LICENSE) file for details.
+
+---
+
+**Elloe AI College** — Building trust in AI through education and best practices.
